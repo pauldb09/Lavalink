@@ -123,7 +123,6 @@ class LavalinkPlayer(
                 true
             }
         }
-
         override fun retrieveOpusFrame(buf: ByteBuf) {
             audioLossCounter.onSuccess()
             buf.writeBytes(lastFrame!!.data)
